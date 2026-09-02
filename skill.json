@@ -1,0 +1,38 @@
+{
+  "name": "genpark-complex-pdf-layout-semantic-chunker-table-parser-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Complex PDF layout semantic chunker and table parser extracting multi-column bounding blocks into structured markdown and AST nodes.",
+  "author": "genpark",
+  "category": "document-ai",
+  "tags": [
+    "pdf-parser",
+    "layout-analysis",
+    "table-extraction",
+    "semantic-chunking",
+    "ocr-markdown"
+  ],
+  "inputs": {
+    "document_pdf_url": {
+      "type": "string"
+    },
+    "preserve_tables_as_markdown": {
+      "type": "boolean"
+    }
+  },
+  "outputs": {
+    "parser_job_id": {
+      "type": "string"
+    },
+    "pages_processed_count": {
+      "type": "integer"
+    },
+    "tables_extracted_as_markdown_count": {
+      "type": "integer"
+    },
+    "clean_markdown_bundle_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
